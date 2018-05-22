@@ -1,0 +1,35 @@
+For 14x14:
+res100 count 0 37
+res100 count 1 35
+res100 count 2 28
+res1000 count 0 389
+res1000 count 1 362
+res1000 count 2 249
+res10000 count 0 3881
+res10000 count 1 3867
+res10000 count 2 2252
+res100000 count 0 38863
+res100000 count 1 38782
+res100000 count 2 22355
+
+For 15x15: 1 Majority
+res100 count 0 28
+res100 count 1 49
+res100 count 2 23
+res1000 count 0 358
+res1000 count 1 437
+res1000 count 2 205
+res10000 count 0 3672
+res10000 count 1 4163
+res10000 count 2 2163
+
+For 15x15: 0 Majority
+res100 count 0 34
+res100 count 1 42
+res100 count 2 24
+res1000 count 0 395
+res1000 count 1 390
+res1000 count 2 215
+res10000 count 0 4091
+res10000 count 1 3750
+res10000 count 2 2159
