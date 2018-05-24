@@ -23,6 +23,21 @@ def generate_data(seed, dim):
     np.random.shuffle(arr)
     return arr
 
+def generate_batch(points,dim):
+    batch = np.empty((0,dim,dim))
+    for seed in range(0,points):
+        if (dim % 2) == 1:
+            arr = np.concatenate((np.ones(dim*dim/2 ,dtype=np.int_), 
+                np.zeros(dim*dim/2+1, dtype=np.int_)))
+        elif (dim % 2) == 0:
+            arr = np.concatenate((np.ones(dim*dim/2,dtype=np.int_), 
+                np.zeros(dim*dim/2, dtype=np.int_)))
+        np.random.seed(seed)
+        np.random.shuffle(arr)
+        batch = np.concatenate((batch, np.reshape(arr,(1,dim,dim))))
+    return batch
+    
+
 def find_majority(a):
     dim = int(a.shape[0]**.5)
     arr = np.reshape(a,(dim,dim))
